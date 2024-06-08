@@ -1,7 +1,7 @@
 package eu.xap3y.xalib.utils
 
 import eu.xap3y.xalib.managers.Texter
-import org.bukkit.entity.Player
+import org.bukkit.entity.LivingEntity
 import org.bukkit.inventory.ItemStack
 
 object ModifyItem {
@@ -75,7 +75,7 @@ object ModifyItem {
      * @param item ItemStack
      */
     @JvmStatic
-    fun applyHead(p: Player, item: ItemStack) {
+    fun applyHead(p: LivingEntity, item: ItemStack) {
         p.equipment?.helmet = item
     }
 }

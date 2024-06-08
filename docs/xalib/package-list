@@ -24,9 +24,13 @@ $dokka.location:eu.xap3y.xalib.objects/TexterObj/prefix/#/PointingToDeclaration/
 $dokka.location:eu.xap3y.xalib.utils////PointingToDeclaration/xalib/eu.xap3y.xalib.utils/index.html
 $dokka.location:eu.xap3y.xalib.utils/ModifyItem///PointingToDeclaration/xalib/eu.xap3y.xalib.utils/-modify-item/index.html
 $dokka.location:eu.xap3y.xalib.utils/ModifyItem/addLore/#org.bukkit.inventory.ItemStack#kotlin.collections.List[kotlin.String]/PointingToDeclaration/xalib/eu.xap3y.xalib.utils/-modify-item/add-lore.html
+$dokka.location:eu.xap3y.xalib.utils/ModifyItem/applyHead/#org.bukkit.entity.LivingEntity#org.bukkit.inventory.ItemStack/PointingToDeclaration/xalib/eu.xap3y.xalib.utils/-modify-item/apply-head.html
 $dokka.location:eu.xap3y.xalib.utils/ModifyItem/genItem/#org.bukkit.inventory.ItemStack#kotlin.String?#kotlin.collections.List[kotlin.String]?/PointingToDeclaration/xalib/eu.xap3y.xalib.utils/-modify-item/gen-item.html
 $dokka.location:eu.xap3y.xalib.utils/ModifyItem/renameItem/#org.bukkit.inventory.ItemStack#kotlin.String/PointingToDeclaration/xalib/eu.xap3y.xalib.utils/-modify-item/rename-item.html
 $dokka.location:eu.xap3y.xalib.utils/ModifyItem/setLore/#org.bukkit.inventory.ItemStack#kotlin.collections.List[kotlin.String]/PointingToDeclaration/xalib/eu.xap3y.xalib.utils/-modify-item/set-lore.html
+$dokka.location:eu.xap3y.xalib.utils/Utils///PointingToDeclaration/xalib/eu.xap3y.xalib.utils/-utils/index.html
+$dokka.location:eu.xap3y.xalib.utils/Utils/strikeLightning/#org.bukkit.Location#org.bukkit.plugin.java.JavaPlugin?/PointingToDeclaration/xalib/eu.xap3y.xalib.utils/-utils/strike-lightning.html
+$dokka.location:eu.xap3y.xalib.utils/Utils/strikeLightnings/#org.bukkit.Location#org.bukkit.plugin.java.JavaPlugin#kotlin.Int#kotlin.Long/PointingToDeclaration/xalib/eu.xap3y.xalib.utils/-utils/strike-lightnings.html
 eu.xap3y.xalib.managers
 eu.xap3y.xalib.objects
 eu.xap3y.xalib.utils
