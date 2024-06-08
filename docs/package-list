@@ -1,6 +1,0 @@
-$dokka.format:javadoc-v1
-$dokka.linkExtension:html
-
-eu.xap3y.xalib.managers
-eu.xap3y.xalib.objects
-
