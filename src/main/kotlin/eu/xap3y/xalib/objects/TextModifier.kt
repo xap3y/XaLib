@@ -1,4 +1,4 @@
-package eu.xap3y.objects
+package eu.xap3y.xalib.objects
 
 /**
  * Text modifier data class

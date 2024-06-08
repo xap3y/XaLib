@@ -1,7 +1,7 @@
-package eu.xap3y.managers
+package eu.xap3y.xalib.managers
 
-import eu.xap3y.objects.TextModifier
-import eu.xap3y.objects.TexterObj
+import eu.xap3y.xalib.objects.TextModifier
+import eu.xap3y.xalib.objects.TexterObj
 import org.bukkit.Bukkit
 import org.bukkit.ChatColor
 import org.bukkit.command.CommandSender

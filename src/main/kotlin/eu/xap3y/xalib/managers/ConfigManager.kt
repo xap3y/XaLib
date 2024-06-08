@@ -1,4 +1,4 @@
-package eu.xap3y.managers
+package eu.xap3y.xalib.managers
 
 import org.bukkit.plugin.java.JavaPlugin
 import java.io.File
