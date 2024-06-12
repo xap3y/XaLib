@@ -15,7 +15,7 @@ object ModifyItem {
     @JvmStatic
     fun renameItem(item: ItemStack, name: String): ItemStack {
         val meta = item.itemMeta
-        meta?.setDisplayName(Texter.coloredText(name))
+        meta?.setDisplayName(Texter.colored(name))
         item.itemMeta = meta
         return item
     }
@@ -30,7 +30,7 @@ object ModifyItem {
     fun addLore(item: ItemStack, lore: List<String>): ItemStack {
         val meta = item.itemMeta
         val loreList = meta?.lore ?: mutableListOf()
-        loreList.addAll(lore.map { Texter.coloredText(it) })
+        loreList.addAll(lore.map { Texter.colored(it) })
         meta?.lore = loreList
         item.itemMeta = meta
         return item
@@ -45,7 +45,7 @@ object ModifyItem {
     @JvmStatic
     fun setLore(item: ItemStack, lore: List<String>): ItemStack {
         val meta = item.itemMeta
-        meta?.lore = lore.map { Texter.coloredText(it) }
+        meta?.lore = lore.map { Texter.colored(it) }
         item.itemMeta = meta
         return item
     }
@@ -78,4 +78,20 @@ object ModifyItem {
     fun applyHead(p: LivingEntity, item: ItemStack) {
         p.equipment?.helmet = item
     }
+
+    @OptIn(ExperimentalStdlibApi::class)
+    @JvmStatic
+    fun extractItemPersistent(item: ItemStack): String =
+        item.itemMeta.persistentDataContainer.serializeToBytes().toHexString()
+
+    @OptIn(ExperimentalStdlibApi::class)
+    @JvmStatic
+    fun importItemPersistent(item: ItemStack, hex: String): ItemStack {
+        item.itemMeta = item.itemMeta.apply {
+            persistentDataContainer.readFromBytes(hex.hexToByteArray())
+        }
+
+        return item
+    }
+
 }

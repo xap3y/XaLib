@@ -1,5 +1,6 @@
 package eu.xap3y.xalib.objects
 
+import org.jetbrains.annotations.Nullable
 import java.io.File
 
 /**
@@ -8,5 +9,5 @@ import java.io.File
 data class TexterObj(
     val prefix: String = "",
     val debug: Boolean = false,
-    val debugFile: File? = null
+    @Nullable val debugFile: File? = null
 )
