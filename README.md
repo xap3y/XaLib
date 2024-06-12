@@ -13,7 +13,7 @@
 <dependency>
   <groupId>eu.xap3y</groupId>
   <artifactId>xalib</artifactId>
-  <version>1.0.4</version>
+  <version>1.0.5</version>
 </dependency>
 ```
 
@@ -21,6 +21,6 @@
 
 ```groovy
 dependencies {
-  implementation 'eu.xap3y:xalib:1.0.4'
+  implementation 'eu.xap3y:xalib:1.0.5'
 }
 ```
