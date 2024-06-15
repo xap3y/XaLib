@@ -13,6 +13,7 @@ import net.kyori.adventure.text.event.HoverEvent
 import org.bukkit.Bukkit
 import org.bukkit.ChatColor
 import org.bukkit.command.CommandSender
+import org.bukkit.entity.Player
 import java.util.logging.Level
 
 class Texter(private val data: TexterObj) {
@@ -96,7 +97,7 @@ class Texter(private val data: TexterObj) {
         @JvmStatic
         fun progressBar(modifiers: ProgressbarModifier): String {
             val maxLength = 20
-            val fillText: String = modifiers.symbolFill.toString().repeat(maxLength * (modifiers.percentage / 100))
+            val fillText: String = modifiers.symbolFill.toString().repeat((modifiers.percentage * maxLength) / 100)
             val emptyText: String = modifiers.symbolEmpty.toString().repeat(maxLength - fillText.length)
             return modifiers.colorFill + fillText + modifiers.colorEmpty +  emptyText
         }
@@ -146,11 +147,11 @@ class Texter(private val data: TexterObj) {
          * @return Component
          */
         @JvmStatic
-        fun format(map: LinkedHashMap<String, FormatterModifiers>): Component {
+        fun formatOneLine(map: LinkedHashMap<String, FormatterModifiers?>): Component {
             val builder: TextComponent.Builder = Component.text()
-            map.forEach { (key: String, value: FormatterModifiers) ->
-                builder.append(Component.text(key).clickEvent(value.clickAction).hoverEvent(HoverEvent.showText(
-                    Component.text(value.hoverText ?: ""))))
+            map.forEach { (key: String, value: FormatterModifiers?) ->
+                builder.append(Component.text(key.replace("&", "§")).clickEvent(value?.clickAction).hoverEvent(HoverEvent.showText(
+                    Component.text(value?.hoverText?.replace("&", "§") ?: ""))))
             }
             return builder.build()
         }
@@ -163,6 +164,6 @@ class Texter(private val data: TexterObj) {
          * @return Component
          */
         fun format(text: String, modifier: FormatterModifiers): Component =
-            format(linkedMapOf(text to modifier))
+            formatOneLine(linkedMapOf(text to modifier))
     }
 }
