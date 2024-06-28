@@ -7,12 +7,13 @@ $dokka.location:eu.xap3y.xalib.managers/ConfigManager/reloadConfig/#/PointingToD
 $dokka.location:eu.xap3y.xalib.managers/Texter.Companion///PointingToDeclaration/xalib/eu.xap3y.xalib.managers/-texter/-companion/index.html
 $dokka.location:eu.xap3y.xalib.managers/Texter.Companion/centered/#kotlin.String/PointingToDeclaration/xalib/eu.xap3y.xalib.managers/-texter/-companion/centered.html
 $dokka.location:eu.xap3y.xalib.managers/Texter.Companion/colored/#kotlin.String/PointingToDeclaration/xalib/eu.xap3y.xalib.managers/-texter/-companion/colored.html
-$dokka.location:eu.xap3y.xalib.managers/Texter.Companion/format/#java.util.LinkedHashMap[kotlin.String,eu.xap3y.xalib.objects.FormatterModifiers]/PointingToDeclaration/xalib/eu.xap3y.xalib.managers/-texter/-companion/format.html
 $dokka.location:eu.xap3y.xalib.managers/Texter.Companion/format/#kotlin.String#eu.xap3y.xalib.objects.FormatterModifiers/PointingToDeclaration/xalib/eu.xap3y.xalib.managers/-texter/-companion/format.html
+$dokka.location:eu.xap3y.xalib.managers/Texter.Companion/formatOneLine/#java.util.LinkedHashMap[kotlin.String,eu.xap3y.xalib.objects.FormatterModifiers?]/PointingToDeclaration/xalib/eu.xap3y.xalib.managers/-texter/-companion/format-one-line.html
 $dokka.location:eu.xap3y.xalib.managers/Texter.Companion/progressBar/#eu.xap3y.xalib.objects.ProgressbarModifier/PointingToDeclaration/xalib/eu.xap3y.xalib.managers/-texter/-companion/progress-bar.html
 $dokka.location:eu.xap3y.xalib.managers/Texter///PointingToDeclaration/xalib/eu.xap3y.xalib.managers/-texter/index.html
 $dokka.location:eu.xap3y.xalib.managers/Texter/Texter/#eu.xap3y.xalib.objects.TexterObj/PointingToDeclaration/xalib/eu.xap3y.xalib.managers/-texter/-texter.html
 $dokka.location:eu.xap3y.xalib.managers/Texter/console/#kotlin.String#eu.xap3y.xalib.objects.TextModifier/PointingToDeclaration/xalib/eu.xap3y.xalib.managers/-texter/console.html
+$dokka.location:eu.xap3y.xalib.managers/Texter/console/#kotlin.String#kotlin.Boolean/PointingToDeclaration/xalib/eu.xap3y.xalib.managers/-texter/console.html
 $dokka.location:eu.xap3y.xalib.managers/Texter/console/#kotlin.String/PointingToDeclaration/xalib/eu.xap3y.xalib.managers/-texter/console.html
 $dokka.location:eu.xap3y.xalib.managers/Texter/debugLog/#kotlin.String#java.util.logging.Level/PointingToDeclaration/xalib/eu.xap3y.xalib.managers/-texter/debug-log.html
 $dokka.location:eu.xap3y.xalib.managers/Texter/response/#org.bukkit.command.CommandSender#kotlin.String#eu.xap3y.xalib.objects.TextModifier/PointingToDeclaration/xalib/eu.xap3y.xalib.managers/-texter/response.html

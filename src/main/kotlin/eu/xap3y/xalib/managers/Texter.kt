@@ -13,7 +13,6 @@ import net.kyori.adventure.text.event.HoverEvent
 import org.bukkit.Bukkit
 import org.bukkit.ChatColor
 import org.bukkit.command.CommandSender
-import org.bukkit.entity.Player
 import java.util.logging.Level
 
 class Texter(private val data: TexterObj) {
@@ -49,6 +48,15 @@ class Texter(private val data: TexterObj) {
      */
     fun console(text: String, modifiers: TextModifier) =
         response(Bukkit.getConsoleSender(), text, modifiers)
+
+    /**
+     * Log a text into the console
+     *
+     * @param text The text that will be logged
+     * @param wPrefix Boolean If the text should have a prefix
+     */
+    fun console(text: String, wPrefix: Boolean) =
+        response(Bukkit.getConsoleSender(), text, TextModifier(wPrefix))
 
     /**
      * Log a text into the console
@@ -142,6 +150,7 @@ class Texter(private val data: TexterObj) {
 
         /**
          * Format a text with modifiers
+         * Only works on paper bukkit platforms
          *
          * @param map LinkedHashMap<String, FormatterModifiers>
          * @return Component
@@ -158,6 +167,7 @@ class Texter(private val data: TexterObj) {
 
         /**
          * Format a text with modifiers
+         * Only works on paper bukkit platforms
          *
          * @param text String
          * @param modifier FormatterModifiers

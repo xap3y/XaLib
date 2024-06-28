@@ -6,7 +6,7 @@
 
     <groupId>eu.xap3y</groupId>
     <artifactId>xalib</artifactId>
-    <version>1.0.5.2</version>
+    <version>1.0.6</version>
 
     <properties>
         <kotlin.version>2.0.0</kotlin.version>
