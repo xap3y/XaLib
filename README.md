@@ -6,7 +6,7 @@
 > The version of the library may differ from the one shown below. \
 > Check the latest version [here](https://github.com/xap3y/XaLib/packages/2173480)
 
-**Docs are available at [xalib.xap3y.eu](https://xalib.xap3y.eu)**
+**Docs are available at [xalib.xap3y.tech](https://xalib.xap3y.tech)**
 ### Maven
 
 ```xml
